@@ -89,6 +89,7 @@
             letter-spacing: 2px;
             background: linear-gradient(135deg, #ffffff 20%, #a5f3fc 60%, var(--accent-blue) 100%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 5px;
             filter: drop-shadow(0 5px 15px rgba(0,0,0,0.6));
@@ -125,6 +126,7 @@
             letter-spacing: 1px;
             background: linear-gradient(90deg, #fff, var(--accent-gold));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -264,6 +266,16 @@
             transform: translateX(4px);
         }
 
+        .clause-item.active .part-row.permanent-lock {
+            border-left-color: var(--accent-gold);
+            background: rgba(255, 183, 3, 0.03);
+        }
+
+        .clause-item.active .part-row.permanent-lock:hover {
+            border-left-color: var(--accent-gold);
+            background: rgba(255, 183, 3, 0.06);
+        }
+
         .part-label {
             font-family: 'Space Grotesk', sans-serif;
             font-weight: 700;
@@ -277,6 +289,20 @@
             color: #cbd5e1;
             font-size: 1rem;
             letter-spacing: 0.2px;
+        }
+
+        .part-sublist {
+            margin-top: 6px;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            color: #cbd5e1;
+        }
+
+        .part-sublist strong {
+            color: var(--accent-neon);
+            font-weight: 600;
         }
 
         /* HIGHLIGHTED AMENDMENT & GOVERNANCE CLAUSE CARD */
@@ -336,6 +362,7 @@
             margin-bottom: 12px;
             background: linear-gradient(90deg, #fff, var(--accent-gold));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -597,6 +624,7 @@
             font-weight: 700;
             background: linear-gradient(90deg, #00bfff 0%, #00ffaa 100%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             filter: drop-shadow(0 0 10px rgba(0, 255, 170, 0.35));
             letter-spacing: 0.5px;
@@ -1139,6 +1167,50 @@
                     <div class="part-row">
                         <span class="part-label">Part - 3</span>
                         <span class="part-text">If match commencement is delayed even one minute past 07:00 AM, run penalties will immediately begin accumulating as outlined in Clause 22.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clause 24 -->
+        <div class="clause-item">
+            <button class="clause-header">
+                <span class="clause-title">Clause - 24: Prize Money Distribution Rules</span>
+                <span class="icon-toggle">+</span>
+            </button>
+            <div class="clause-panel">
+                <div class="clause-content">
+                    <div class="part-row">
+                        <span class="part-label">Part - 1 — Individual Prize Distribution</span>
+                        <span class="part-text">All prize money shall be distributed directly to individual players rather than collectively to the team. The Head Organiser holds the sole authority to determine the specific prize money amount awarded to each eligible player.</span>
+                    </div>
+                    <div class="part-row">
+                        <span class="part-label">Part - 2 — Individual Responsibility</span>
+                        <span class="part-text">Each player is personally responsible for claiming and collecting their own allocated prize money. Team captains or fellow team members shall not be entitled to demand, collect, or claim prize money on behalf of the entire team or any other individual player.</span>
+                    </div>
+                    <div class="part-row">
+                        <span class="part-label">Part - 3 — Absence from Matches</span>
+                        <span class="part-text">Deductions will be strictly enforced for player absences according to the following tiers:</span>
+                        <ul class="part-sublist">
+                            <li>Any registered player who remains absent for <strong>one (1) or more matches</strong> shall face a <strong>50% deduction</strong> from their allocated prize money.</li>
+                            <li>Any registered player who remains absent throughout the <strong>entire tournament</strong> shall face a <strong>100% deduction</strong> (complete forfeiture) of their allocated prize money.</li>
+                        </ul>
+                    </div>
+                    <div class="part-row">
+                        <span class="part-label">Part - 4 — Eligibility of Registered Players</span>
+                        <span class="part-text">Only officially registered players shall be eligible to receive prize money. Replacement players and substitute players shall not be entitled to any share of the prize money under any circumstances.</span>
+                    </div>
+                    <div class="part-row">
+                        <span class="part-label">Part - 5 — Utilisation of Deducted Prize Money</span>
+                        <span class="part-text">Any prize money deducted due to player absence or ineligibility shall be retained by the Organising Committee and reserved exclusively for future tournament-related expenses.</span>
+                    </div>
+                    <div class="part-row">
+                        <span class="part-label">Part - 6 — Final Authority</span>
+                        <span class="part-text">All decisions regarding prize money allocation, deductions, eligibility, and distribution shall rest solely with the Head Organiser. The decision of the Head Organiser shall be considered final and binding on all participating players.</span>
+                    </div>
+                    <div class="part-row permanent-lock">
+                        <span class="part-label">Part - 7 — Non-Amendment Clause (Permanent Rule)</span>
+                        <span class="part-text">These Prize Money Distribution Rules are permanent and strictly non-amendable. No player, captain, team, or organising member shall have the authority to modify, suspend, or override any provision of these rules. These rules shall remain binding throughout the current tournament and in all future editions of the Samal–Rout Cup.</span>
                     </div>
                 </div>
             </div>
